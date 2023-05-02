@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="description" content="Even Number Display Webpage">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="ZoiaB>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Code for the favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-teal.min.css" />
+    
+    <!-- Title -->
+    <title>Number Display Webpage</title>
+  </head>
+  <body>
+    
+    <!-- Link to JS file -->
+    <script src="./js/script.js"></script>
+    <h1>Number Display Webpage</h1>
+    
+    <!-- Header and text -->
+      <h3>Welcome!</h3>
+      <p>This webpage will give you the range of numbers between the numbers you input.</p>
+      <h3>Your Input:</h3>
+    
+      <!-- Form for user input -->
+      <form action="javascript:numbersSent()">
+        <label for="min number">Enter a minimum number:</label>
+        <input type="number" step="1" id="min-number" placeholder="Minimum"><br><br>
+        <label for="max number">Enter a maximum number:</label>
+        <input type="number" step="1" id="max-number" placeholder="Maximum"><br><br>
+        <input type="submit" value="Submit Numbers" id="styled-button">
+      </form>
+    
+    <!-- Div for range of numbers to be displayed -->
+    <div id="results"></div>
+  </body>
+</html>

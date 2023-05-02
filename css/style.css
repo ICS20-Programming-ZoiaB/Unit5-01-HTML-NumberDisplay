@@ -1,0 +1,29 @@
+/* Created by: ZoiaB
+* Created on: Apr 2023
+* This CSS file defines the style for index.html
+* ICS2O-Unit5-01-HTML-EvenNumberDisplay
+*/
+
+body {
+  width: 80%;
+  margin: 5% 10%;
+  background-color: #F4E4BA;
+}
+
+h1 {
+  text-align: center;
+  padding: 30px;
+  color: #D66BA0;
+  background-color: #b30068;
+}
+
+h3 {
+  padding: 30px;
+  color: #E5A9A9;
+}
+
+#results {
+  padding: 30px;
+  background-color: #b30068;
+  margin-top: 30px;
+}
