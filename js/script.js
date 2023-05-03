@@ -1,4 +1,4 @@
-// Copyright (c) 2022 ZoiaB All rights reserved
+// Copyright (c) 2023 ZoiaB All rights reserved
 //
 // Created by: ZoiaB
 // Created on: Apr 2023
@@ -30,7 +30,7 @@ function numbersSent() {
     while ((counter >= minNumber) && (counter <= maxNumber)) {
       numbers = numbers + counter + "<br>";
       counter = counter + 1;
-      message = "Here are all the numbers between the minimum and maximum that you entered:<br><br>" + numbers;
+      message = "Here are all the numbers between the minimum and maximum numbers that you entered:<br><br>" + numbers;
     }
   }
 
