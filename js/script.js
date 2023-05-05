@@ -7,6 +7,10 @@
 "use strict"
 
 function numbersSent() {
+
+function isEmpty(str) {
+  return !str || 0 === str.length;
+}
   
   //initializing the numbers and message variable to an empty string
   let numbers = "";
@@ -16,17 +20,21 @@ function numbersSent() {
   let minNumber = parseInt(document.getElementById("min-number").value);
   let maxNumber = parseInt(document.getElementById("max-number").value);
 
-  //initializing the counter variable to the minNumber
+  //initializing the counter variable to the minium number
   let counter = minNumber;
 
-  //if statement checks if minNumber > maxNumber (there is an error)
+  //if statement to create an error message if user enters a minimum that is greater than maximum
   if (minNumber > maxNumber) {
     message = "Ensure that minimum value is less than or equal to maximum value.";
   }
-    
-  //else, complete while loop to create list of even numbers between min and max
+  //elseif: if 
+  else if ((isEmpty(minNumber)) || (isEmpty(maxNumber))){
+  message = "Ensure that both minimum and maximum numbers are entered.";
+}
+  
+  //else, complete while loop and create list of numbers from minimum to maximum
   else {
-    //while loop that specifies the range, so the code within the loop executes as long as the counter is greater than or equal to the minimum and less than or equal to the maximum
+    //while loop that specifies the range, so the code executes as long as the maximum is greater than the minimum
     while ((counter >= minNumber) && (counter <= maxNumber)) {
       numbers = numbers + counter + "<br>";
       counter = counter + 1;
@@ -34,6 +42,6 @@ function numbersSent() {
     }
   }
 
-  //displaying the results (the range of even numbers) back to the user
+  //displaying the range of numbers back to the user
   document.getElementById("results").innerHTML = message;
 }
