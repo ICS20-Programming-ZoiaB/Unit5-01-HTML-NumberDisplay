@@ -1,7 +1,7 @@
 // Copyright (c) 2023 ZoiaB All rights reserved
 //
 // Created by: ZoiaB
-// Created on: Apr 2023
+// Created on: May 2023
 // This file contains the JS functions for index.html
 
 "use strict"
