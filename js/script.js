@@ -16,7 +16,7 @@ function numbersSent() {
   let minNumber = parseInt(document.getElementById("min-number").value);
   let maxNumber = parseInt(document.getElementById("max-number").value);
 
-  //initializing the counter variable to the minium number
+  //initializing the counter variable to the minimum number
   let counter = minNumber;
 
   //if statement to create an error message if user enters a minimum that is greater than maximum
