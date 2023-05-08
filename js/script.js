@@ -7,10 +7,6 @@
 "use strict"
 
 function numbersSent() {
-
-function isEmpty(str) {
-  return !str || 0 === str.length;
-}
   
   //initializing the numbers and message variable to an empty string
   let numbers = "";
@@ -28,7 +24,7 @@ function isEmpty(str) {
     message = "Ensure that minimum value is less than or equal to maximum value.";
   }
   //elseif: if 
-  else if ((isEmpty(minNumber)) || (isEmpty(maxNumber))){
+  else if ((isNaN(minNumber)) || (isNaN(maxNumber))){
   message = "Ensure that both minimum and maximum numbers are entered.";
 }
   
