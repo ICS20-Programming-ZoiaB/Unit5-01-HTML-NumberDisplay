@@ -23,7 +23,7 @@ function numbersSent() {
   if (minNumber > maxNumber) {
     message = "Ensure that minimum value is less than or equal to maximum value.";
   }
-  //elseif: if 
+  //elseif: if textfields are empty or invalid
   else if ((isNaN(minNumber)) || (isNaN(maxNumber))){
   message = "Ensure that both minimum and maximum numbers are entered.";
 }
